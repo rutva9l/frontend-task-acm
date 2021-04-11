@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.homePage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("assets/homeImg.jpg");
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+nav {
+    width: 80%;
+    top: 30px;
+    position: relative;
+    margin: auto;
+    background: white;
+    height: 120px;
+    padding: 0 40px;
+    color: #0165aa;
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+nav img {
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    cursor: pointer;
+    padding: 49px 25px;
+}
+
+li:hover {
+    color: #3e3e3e;
+    background: #f5f6f7;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    background: #f5f6f7;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    top: 65vh;
+}
+
+.cardContainer {
+    position: relative;
+    top: -20vh;
+}
+
+.card {
+    position: relative;
+    margin: 0 auto 100px;
+    padding: 0 100px 30px;
+    background: white;
+    width: 60%;
+    box-shadow: 0 0 20px -5px rgba(156, 156, 156, 0.75);
+}
+
+.content {
+    position: relative;
+    top: -4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile {
+    position: relative;
+    cursor: pointer;
+    top: -40px;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid white;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+}
+
+.name {
+    margin-bottom: 5px;
+    color: #0165aa;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.date {
+    color: #8f8f8f;
+    font-size: 12px;
+}
+
+.main {
+    color: #454545;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.rating {
+    width: 55%;
+    border: 2px solid #eff1f3;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.thumbs {
+    padding: 15px 30px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.up {
+    background: #00b349;
+}
+
+.down {
+    background: #ed3310;
+}
+
+.thumbs i {
+    color: white;
+    font-size: 20px;
+}
+
+.fa-star {
+    color: #dee2e6;
+    cursor: pointer;
+}
+
+.stars4:nth-child(-n+5) {
+    color: #ffd53c;
+}
+
+.stars2:nth-child(-n+3) {
+    color: #ffd53c;
+}
+
+.fade {
+    cursor: pointer;
+    height: 140px;
+    overflow: visible;
+}
+
+.text {
+    height: 100%;
+}
+
+.comment {
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+    bottom: 0;
+    background: #fad23d;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 17px 65px;
+    color: #0165aa;
+}
+
+.commentInput {
+    border: 2px solid #eff1f3;
+    width: 100%;
+    padding: 20px;
+    display: none;
+    margin:30px 0 10px 0;
+}
+
+.fadeOut {
+    overflow: hidden;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(rgb(43, 43, 43), rgb(236, 236, 236));
+    -webkit-background-clip: text;
+}
+
+.relative {
+    position: relative;
+    margin-bottom: 0;
+}
+.Submit{
+    display: none;
+}
+.dispComment {
+    width: 100%;
+    position: relative;
+    padding: 30px 40px 45px 40px;
+    background: #ecf0f2;
+    clip-path: polygon(50% 0, 54% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%, 46% 10%);
+    max-height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+}
+.heading{
+    /* z-index: 10; */
+    position: relative;
+    margin: 0;
+}
+
+.commentText{
+    /* z-index: 10; */
+    position: relative;
+    max-height: 100px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.content1{
+    position: relative;
+    width: 100%;
+    top: 20px;
+    display: none;
+    height: 170px;
+}
+
+.commentProfile {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    bottom:40px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #ecf0f2;
+    background-size: contain;
+    overflow: hidden;
+    z-index: 10;
+    background-image: url("https://theofficeanalytics.files.wordpress.com/2017/11/dwight.jpeg?w=1200");
+}
+.managerName{
+    color: #363636;
+    font-size: 13px;
+    font-weight: 600;
+    bottom: 35px;
+    position: relative;
+    text-align: center;
+}
+.post{
+    color: #525252;
+    font-size:11px ;
+    font-weight: 600;
+    position: relative;
+    bottom: 35px;
+    text-align: center;
+}

@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ACM Task</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav class="flex">
+        <img src="assets/hc-logo.svg" alt="">
+        <ul class="flex">
+            <li>Dashboard</li>
+            <li>Reviews</li>
+            <li>Hotel Manager</li>
+            <li>Settings</li>
+        </ul>
+    </nav>
+    <div class="homePage"></div>
+    <div class="container">
+        <div class="cardContainer">
+            <div class="card">
+                <div class="profile">
+                    <img src="https://randomuser.me/api/portraits/men/96.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="name">Cory Simmmons</div>
+                    <div class="date">31 February 2021</div>
+                    <div class="main">Lovely place! Totally worth visiting.</div>
+                    <div class="rating flex">
+                        <div class="thumbs up"><i class="fas fa-thumbs-up"></i></div>
+                        <i class="fas fa-star stars4"></i>
+                        <i class="fas fa-star stars4"></i>
+                        <i class="fas fa-star stars4"></i>
+                        <i class="fas fa-star stars4"></i>
+                        <i class="fas fa-star stars4"></i>
+                        <i class="fas fa-star stars4"></i>
+                        <span style="color: #454545; font-weight: 600;">4/6</span>
+                    </div>
+                    <div class="fade fadeOut">
+                        <div class="text 0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                    </div>
+                    <div onclick="takeComment()" class="comment">ADD COMMENT</div>
+                    <input type="text" placeholder="sumn" class="commentInput">
+                    <button type="submit" class="Submit">Submit</button>
+                    <div class="content1">
+                        <div class="dispComment">
+                            <h4 class="heading">Comment</h4>
+                            <div class="commentText 0"></div>
+                        </div>
+                        <p class="commentProfile"></p>
+                        <div class="managerName">Dwight Schrute</div>
+                        <div class="post">Assistant TO THE Regional Manager</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="profile">
+                    <img src="https://randomuser.me/api/portraits/women/51.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="name">Sophie Rhodes</div>
+                    <div class="date">31 February 2021</div>
+                    <div class="main">Lovely place! Totally worth visiting.</div>
+                    <div class="rating flex">
+                        <div class="thumbs down"><i class="fas fa-thumbs-down"></i></div>
+                        <!-- <div class="star flex">
+                        </div> -->
+                        <i class="fas fa-star stars2"></i>
+                        <i class="fas fa-star stars2"></i>
+                        <i class="fas fa-star stars2"></i>
+                        <i class="fas fa-star stars2"></i>
+                        <i class="fas fa-star stars2"></i>
+                        <i class="fas fa-star stars2"></i>
+                        <span style="color: #454545; font-weight: 600;">2/6</span>
+                    </div>
+                    <d1v class="fade fadeOut">
+                        <div class="text 1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                    </d1v>
+                    <div onclick="takeComment()" class="comment">ADD COMMENT</div>
+                    <input type="text" placeholder="sumn" class="commentInput">
+                    <button type="submit" class="Submit">Submit</button>
+                    <div class="content1">
+                        <div class="dispComment">
+                            <h4 class="heading">Comment</h4>
+                            <div class="commentText 0"></div>
+                        </div>
+                        <p class="commentProfile"></p>
+                        <div class="managerName">Dwight Schrute</div>
+                        <div class="post">Assistant TO THE Regional Manager</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="profile">
+                    <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="name">Cecil Walters</div>
+                    <div class="date">31 February 2021</div>
+                    <div class="main">Lovely place! Totally worth visiting.</div>
+                    <div class="rating flex">
+                        <div class="thumbs up"><i class="fas fa-thumbs-up"></i></div>
+                        <!-- <div class="star flex">
+                    </div> -->
+                        <i class="fas fa-star stars4"></i>
+                        <i class="fas fa-star stars4"></i>
+                        <i class="fas fa-star stars4"></i>
+                        <i class="fas fa-star stars4"></i>
+                        <i class="fas fa-star stars4"></i>
+                        <i class="fas fa-star stars4"></i>
+                        <span style="color: #454545; font-weight: 600;">4/6</span>
+                    </div>
+                    <div class="fade fadeOut">
+                        <div class="text 2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                    </div>
+                    <div onclick="takeComment()" class="comment">ADD COMMENT</div>
+                    <input type="text" placeholder="sumn" class="commentInput">
+                    <button type="submit" class="Submit">Submit</button>
+                    <div class="content1">
+                        <div class="dispComment">
+                            <h4 class="heading">Comment</h4>
+                            <div class="commentText 0"></div>
+                        </div>
+                        <p class="commentProfile"></p>
+                        <div class="managerName">Dwight Schrute</div>
+                        <div class="post">Assistant TO THE Regional Manager</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="profile">
+                    <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="name">Abigail Fleming</div>
+                    <div class="date">31 February 2021</div>
+                    <div class="main">Lovely place! Totally worth visiting.</div>
+                    <div class="rating flex">
+                        <div class="thumbs down"><i class="fas fa-thumbs-down"></i></i></div>
+                        <!-- <div class="star flex">
+                    </div> -->
+                        <i class="fas fa-star stars2"></i>
+                        <i class="fas fa-star stars2"></i>
+                        <i class="fas fa-star stars2"></i>
+                        <i class="fas fa-star stars2"></i>
+                        <i class="fas fa-star stars2"></i>
+                        <i class="fas fa-star stars2"></i>
+                        <span style="color: #454545; font-weight: 600;">2/6</span>
+                    </div>
+                    <div class="fade fadeOut">
+                        <div class="text 3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                    </div>
+                    <div onclick="takeComment()" class="comment">ADD COMMENT</div>
+                    <input type="text" placeholder="sumn" class="commentInput">
+                    <button type="submit" class="Submit">Submit</button>
+                    <div class="content1">
+                        <div class="dispComment">
+                            <h4 class="heading">Comment</h4>
+                            <div class="commentText 0"></div>
+                        </div>
+                        <p class="commentProfile"></p>
+                        <div class="managerName">Dwight Schrute</div>
+                        <div class="post">Assistant TO THE Regional Manager</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer>
+        &copy 1999-2021 HolidayCheck AG
+    </footer> -->
+</body>
+<script src="app.js"></script>
+
+</html>
