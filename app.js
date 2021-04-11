@@ -9,37 +9,44 @@ const displayComment = document.querySelectorAll(".displayComment");
 const heading = document.querySelectorAll(".heading");
 const commentText = document.querySelectorAll(".commentText");
 const commentProfile = document.querySelectorAll(".commentProfile");
-let count = 0;
+
 window.onload = function () {
-    assignIds();
+    assignIds(); //to identify which card the comment is meant for
 }
 
 function assignIds() {
     for (var i = 0; i < 4; ++i) {
-        comments[i].id = i;
+        comments[i].id = i; //to identify which card the comment is meant for
     }
 }
 
 function takeComment() {
     let evt = window.event;
     let Target = evt.target;
-    let num = Target.id;
+    let num = Target.id; //to identify which card the comment is meant for
     comments[num].style.display = "none";
+
+    //displaying the comment input box
     inputs[num].style.display = "block";
     commentSubmit[num].style.display = "block";
+
+    //displaying the comment itself on clicking submit
     commentSubmit[num].addEventListener("click", function () {
         console.log(inputs[num].value);
         inputs[num].style.display = "none";
         commentSubmit[num].style.display = "none";
-        commentText[num].innerHTML=inputs[num].value;
+        commentText[num].innerHTML = inputs[num].value;
         content1[num].style.display = "block";
-        cards[num].style.paddingBottom="60px";
+        cards[num].style.paddingBottom = "60px";
     })
 }
+
 cardContainer.addEventListener("click", function (e) {
     let Target = e.target;
-    if(Target.classList[0]="fade"){
-        let num1=Target.classList[1];
+
+    //revealing text on click
+    if (Target.classList[0] = "fade") {
+        let num1 = Target.classList[1];
         fade[num1].classList.toggle("fadeOut");
     }
 })
