@@ -9,24 +9,26 @@ const displayComment = document.querySelectorAll(".displayComment");
 const heading = document.querySelectorAll(".heading");
 const commentText = document.querySelectorAll(".commentText");
 const commentProfile = document.querySelectorAll(".commentProfile");
+const hamburger=document.getElementById("hamburger");
+const menu=document.querySelector("ul");
 
 window.onload = function () {
-    assignIds(); //to identify which card the comment is meant for
+    assignIds(); //to identify which card the comment is meant to be added
 }
 
 function assignIds() {
     for (var i = 0; i < 4; ++i) {
-        comments[i].id = i; //to identify which card the comment is meant for
+        comments[i].id = i; //to identify which card the comment is meant to be added
     }
 }
 
 function takeComment() {
     let evt = window.event;
     let Target = evt.target;
-    let num = Target.id; //to identify which card the comment is meant for
+    let num = Target.id; //to identify which card the comment is meant to be added
     comments[num].style.display = "none";
 
-    //displaying the comment input box
+    //displaying the comment input
     inputs[num].style.display = "block";
     commentSubmit[num].style.display = "block";
 
@@ -49,4 +51,9 @@ cardContainer.addEventListener("click", function (e) {
         let num1 = Target.classList[1];
         fade[num1].classList.toggle("fadeOut");
     }
+})
+hamburger.addEventListener("click",function(){
+    menu.classList.toggle("open");
+    hamburger.classList.toggle("cross");
+    $("#hamburger div").toggleClass("white");
 })

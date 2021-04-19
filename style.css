@@ -12,7 +12,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("assets/homeImg.jpg");
+    background: url("assets/homeImg.jpg") no-repeat;
     width: 100%;
     height: 100vh;
     z-index: -1;
@@ -20,7 +20,7 @@ body {
 
 nav {
     width: 80%;
-    top: 30px;
+    top: 3.75vh;
     position: relative;
     margin: auto;
     background: white;
@@ -38,11 +38,14 @@ nav img {
 
 ul {
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 li {
     cursor: pointer;
-    padding: 49px 25px;
+    padding: 49px 1.625vw;
 }
 
 li:hover {
@@ -54,6 +57,37 @@ li:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#hamburger{
+    cursor: pointer;
+    width: 24px;
+    display: none;
+}
+
+#hamburger div{
+    width: 100%;
+    height: 2px;
+    margin: 4px;
+    background: #0165aa;
+    transition: .7s ease;
+}
+
+.open{
+    opacity: 0.6;
+    z-index: 10;
+}
+#hamburger div.white{background: white;}
+#hamburger.cross div:nth-child(1) {
+    transform: translateY(6.5px) rotateZ(45deg);
+}
+
+#hamburger.cross div:nth-child(3) {
+    transform: translateY(-6.5px) rotateZ(-45deg);
+}
+
+#hamburger.cross div:nth-child(2) {
+    width: 0;
 }
 
 .container {
@@ -97,7 +131,7 @@ li:hover {
     border-radius: 50%;
     border: 2px solid white;
     overflow: hidden;
-    z-index: 10;
+    z-index: 5;
 }
 
 .profile img {
@@ -121,6 +155,7 @@ li:hover {
     color: #454545;
     font-size: 30px;
     margin: 20px 0;
+    text-align: center;
 }
 
 .rating {
@@ -182,6 +217,7 @@ li:hover {
     font-weight: 600;
     padding: 17px 65px;
     color: #0165aa;
+    text-align: center;
 }
 
 .commentInput {
@@ -249,7 +285,7 @@ li:hover {
     border: 2px solid #ecf0f2;
     background-size: contain;
     overflow: hidden;
-    z-index: 10;
+    z-index: 5;
     background-image: url("https://theofficeanalytics.files.wordpress.com/2017/11/dwight.jpeg?w=1200");
 }
 .managerName{
@@ -267,4 +303,52 @@ li:hover {
     position: relative;
     bottom: 35px;
     text-align: center;
+}
+@media (min-width:894px) and (max-width:1297px){
+    .rating{width: 90%;}
+}
+@media screen and (max-width:893px){
+    .rating{width: 100%;}
+    .thumbs{padding: 15px 20px;}
+}
+@media (min-width:641px) and (max-width:893px){
+    ul{padding-left: 20px;}
+    nav{padding-left: 40px;}
+    .card{padding: 0 60px 30px;}
+    .logo{width: 100px;}
+}
+@media screen and (max-width:640px){
+    .container{width: 100%;}
+    .card{
+        padding: 0 40px 30px;
+        width: 80%;
+    }
+    .main{
+        font-size: 24px;
+    }
+    .comment{
+        padding: 17px 20%;
+    }
+    ul{
+        position: fixed;
+        left:0;
+        height:100vh;
+        top:-2vh;
+        background-color: #000000;
+        opacity: 0;
+        flex-direction:column;
+        color: white;
+        width:100vw;
+        justify-content: center;
+        transition: 0.45s ease-in;
+        z-index: -1;
+    }
+    ul li{
+        z-index: 12;
+        padding: 25px 10px;
+    }
+    #hamburger{
+        display: block;
+        z-index: 12;
+    }
 }

@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ACM Task</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,13 +15,18 @@
 
 <body>
     <nav class="flex">
-        <img src="assets/hc-logo.svg" alt="">
-        <ul class="flex">
+        <img src="assets/hc-logo.svg" alt="" class="logo">
+        <ul>
             <li>Dashboard</li>
             <li>Reviews</li>
             <li>Hotel Manager</li>
             <li>Settings</li>
         </ul>
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </nav>
     <div class="homePage"></div>
     <div class="container">
@@ -53,7 +60,7 @@
                         </div>
                     </div>
                     <div onclick="takeComment()" class="comment">ADD COMMENT</div>
-                    <input type="text" placeholder="Add comment..." class="commentInput">
+                    <input type="text" placeholder="sumn" class="commentInput">
                     <button type="submit" class="Submit">Submit</button>
                     <div class="content1">
                         <div class="dispComment">
@@ -97,7 +104,7 @@
                         </div>
                     </d1v>
                     <div onclick="takeComment()" class="comment">ADD COMMENT</div>
-                    <input type="text" placeholder="Add comment..." class="commentInput">
+                    <input type="text" placeholder="sumn" class="commentInput">
                     <button type="submit" class="Submit">Submit</button>
                     <div class="content1">
                         <div class="dispComment">
@@ -141,7 +148,7 @@
                         </div>
                     </div>
                     <div onclick="takeComment()" class="comment">ADD COMMENT</div>
-                    <input type="text" placeholder="Add comment..." class="commentInput">
+                    <input type="text" placeholder="sumn" class="commentInput">
                     <button type="submit" class="Submit">Submit</button>
                     <div class="content1">
                         <div class="dispComment">
@@ -185,7 +192,7 @@
                         </div>
                     </div>
                     <div onclick="takeComment()" class="comment">ADD COMMENT</div>
-                    <input type="text" placeholder="Add comment..." class="commentInput">
+                    <input type="text" placeholder="sumn" class="commentInput">
                     <button type="submit" class="Submit">Submit</button>
                     <div class="content1">
                         <div class="dispComment">
@@ -204,6 +211,7 @@
         &copy 1999-2021 HolidayCheck AG
     </footer> -->
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="app.js"></script>
 
 </html>
